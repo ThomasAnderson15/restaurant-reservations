@@ -12,8 +12,8 @@ export default function Table({table, clearTable}) {
       clearTable(table.table_id);
   }
   return (
-    <div className="card mx-1 my-2" >
-      <div className="card-body bg-secondary text-light">
+    <div style={{backgroundColor: "DarkOliveGreen", color: "white"}} className="card mx-1 my-2" >
+      <div style={{backgroundColor: "DarkOliveGreen", color: "white"}} className="card-body">
         <h4 className="card-title">{table.table_name}</h4>
         <p className="card-text">Capacity: {table.capacity}</p>
         <p className="card-text" data-table-id-status={table.table_id}>{table.reservation_id ? "occupied"

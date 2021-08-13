@@ -32,7 +32,7 @@ export default function Search() {
           onChange={handleChange}
           value={mobileNumber}
         ></input>
-        <button type="submit" className="btn btn-info m-2 p-3">
+        <button style={{backgroundColor: "DarkOliveGreen", color: "white"}} type="submit" className="btn btn-info m-2 p-3">
           Find
         </button>
       </form>

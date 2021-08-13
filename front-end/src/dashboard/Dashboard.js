@@ -52,11 +52,11 @@ function Dashboard() {
       </div>
 
       <div>
-        <button className="btn btn-info m-1 p-3"
+        <button style={{backgroundColor: "DarkOliveGreen", color: "white"}} className="btn btn-info m-1 p-3"
         onClick={()=> history.push(`/dashboard?date=${previous(date)}`)}>Previous Date</button>
-        <button className="btn btn-info m-1 p-3"
+        <button style={{backgroundColor: "DarkOliveGreen", color: "white"}} className="btn btn-info m-1 p-3"
         onClick={()=> history.push(`/dashboard?date=${today()}`)}>Today</button>
-        <button className="btn btn-info m-1 p-3"
+        <button style={{backgroundColor: "DarkOliveGreen", color: "white"}} className="btn btn-info m-1 p-3"
         onClick={()=> history.push(`/dashboard?date=${next(date)}`)}>Next Date</button>
       </div>
       <ErrorAlert error={reservationsError} />
